@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by NUK on 16/9/5.
+//  Copyright © 2016年 NUK. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//这里用来导入经常性需要导的头文件
+#ifdef __OBJC__
+//系统
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+//第三方库
+#import <JSONModel/JSONModel.h>
+#import <MJRefresh/MJRefresh.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <Masonry/Masonry.h>
+
+//自定制
+#import "Const.h"
+#import "UIView+Uitl.h"
+#import "BDJDownloader.h"
+
+
+
+#endif
+
+
+#endif /* PrefixHeader_pch */
