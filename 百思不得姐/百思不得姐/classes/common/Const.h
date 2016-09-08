@@ -13,11 +13,19 @@
 //屏幕 的宽度和高度
 #define kScreenWidth ([[UIScreen mainScreen]bounds].size.width)
 #define kScreenHeight ([[UIScreen mainScreen]bounds].size.height)
+
+
+//1.0获取精华和最新的类型
+#define kNavBarTitleListUrl (@"http://s.budejie.com/public/list-appbar/bs0315-iphone-4.3/")
+
+//1.1 推荐
 #define kERecommendUrl (@"http://s.budejie.com/topic/list/jingxuan/1/bs0315-iphone-4.3/%ld-20.json")
 
+//1.2视频
+#define kEVidelUrl (@"http://s.budejie.com/topic/list/jingxuan/41/bs0315-iphone-4.3/%ld-20.json")
 
-
-
+//获取列表
+//http://s.budejie.com/public/list-appbar/bs0315-iphone-4.3/
 //精华
 
 //1.1 推荐

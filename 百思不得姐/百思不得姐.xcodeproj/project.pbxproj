@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6E6EACD32D696851E100447A /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE9D4C13F494EEC5601472E /* libPods-百思不得姐.a */; };
+		A75974F11D7FC0F1007027D4 /* EssenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A75974F01D7FC0F1007027D4 /* EssenceTableViewController.m */; };
+		A75974F41D7FE9B5007027D4 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A75974F31D7FE9B5007027D4 /* MenuModel.m */; };
+		A75974F71D7FF053007027D4 /* NavTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A75974F61D7FF053007027D4 /* NavTitleView.m */; };
+		A75975021D7FF8B5007027D4 /* navigationButtonRandom_26x26_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974F81D7FF8B5007027D4 /* navigationButtonRandom_26x26_@1x.png */; };
+		A75975031D7FF8B5007027D4 /* navigationButtonRandom_26x26_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974F91D7FF8B5007027D4 /* navigationButtonRandom_26x26_@2x.png */; };
+		A75975041D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974FA1D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@1x.png */; };
+		A75975051D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974FB1D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@2x.png */; };
+		A75975061D7FF8B5007027D4 /* review_post_nav_icon_20x17_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974FC1D7FF8B5007027D4 /* review_post_nav_icon_20x17_@2x.png */; };
+		A75975071D7FF8B5007027D4 /* review_post_nav_icon_20x17_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974FD1D7FF8B5007027D4 /* review_post_nav_icon_20x17_@3x.png */; };
+		A75975081D7FF8B5007027D4 /* review_post_nav_icon_20x18_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974FE1D7FF8B5007027D4 /* review_post_nav_icon_20x18_@1x.png */; };
+		A75975091D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75974FF1D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@2x.png */; };
+		A759750A1D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75975001D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@3x.png */; };
+		A759750B1D7FF8B5007027D4 /* review_post_nav_icon_click_20x18_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A75975011D7FF8B5007027D4 /* review_post_nav_icon_click_20x18_@1x.png */; };
+		A76353961D7E952D00E30B16 /* EssenceVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A76353941D7E952D00E30B16 /* EssenceVideoCell.m */; };
+		A76353971D7E952D00E30B16 /* EssenceVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76353951D7E952D00E30B16 /* EssenceVideoCell.xib */; };
+		A763539B1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A76353981D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png */; };
+		A763539C1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A76353991D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png */; };
+		A763539D1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A763539A1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png */; };
 		A7CB4F6B1D7D001B00D2DD09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CB4F6A1D7D001B00D2DD09 /* main.m */; };
 		A7CB4F6E1D7D001B00D2DD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CB4F6D1D7D001B00D2DD09 /* AppDelegate.m */; };
 		A7CB4F711D7D001B00D2DD09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CB4F701D7D001B00D2DD09 /* ViewController.m */; };
@@ -262,6 +280,28 @@
 /* Begin PBXFileReference section */
 		15DE7290B6013E9A03E78734 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		2823E0813ABC45B5BAA5F525 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
+		A75974EF1D7FC0F1007027D4 /* EssenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceTableViewController.h; sourceTree = "<group>"; };
+		A75974F01D7FC0F1007027D4 /* EssenceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceTableViewController.m; sourceTree = "<group>"; };
+		A75974F21D7FE9B5007027D4 /* MenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		A75974F31D7FE9B5007027D4 /* MenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		A75974F51D7FF053007027D4 /* NavTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavTitleView.h; sourceTree = "<group>"; };
+		A75974F61D7FF053007027D4 /* NavTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavTitleView.m; sourceTree = "<group>"; };
+		A75974F81D7FF8B5007027D4 /* navigationButtonRandom_26x26_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandom_26x26_@1x.png"; sourceTree = "<group>"; };
+		A75974F91D7FF8B5007027D4 /* navigationButtonRandom_26x26_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandom_26x26_@2x.png"; sourceTree = "<group>"; };
+		A75974FA1D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomClick_26x26_@1x.png"; sourceTree = "<group>"; };
+		A75974FB1D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomClick_26x26_@2x.png"; sourceTree = "<group>"; };
+		A75974FC1D7FF8B5007027D4 /* review_post_nav_icon_20x17_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "review_post_nav_icon_20x17_@2x.png"; sourceTree = "<group>"; };
+		A75974FD1D7FF8B5007027D4 /* review_post_nav_icon_20x17_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "review_post_nav_icon_20x17_@3x.png"; sourceTree = "<group>"; };
+		A75974FE1D7FF8B5007027D4 /* review_post_nav_icon_20x18_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "review_post_nav_icon_20x18_@1x.png"; sourceTree = "<group>"; };
+		A75974FF1D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "review_post_nav_icon_click_20x17_@2x.png"; sourceTree = "<group>"; };
+		A75975001D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "review_post_nav_icon_click_20x17_@3x.png"; sourceTree = "<group>"; };
+		A75975011D7FF8B5007027D4 /* review_post_nav_icon_click_20x18_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "review_post_nav_icon_click_20x18_@1x.png"; sourceTree = "<group>"; };
+		A76353931D7E952D00E30B16 /* EssenceVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceVideoCell.h; sourceTree = "<group>"; };
+		A76353941D7E952D00E30B16 /* EssenceVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceVideoCell.m; sourceTree = "<group>"; };
+		A76353951D7E952D00E30B16 /* EssenceVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceVideoCell.xib; sourceTree = "<group>"; };
+		A76353981D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellmorebtnnormal_24x20_@1x.png"; sourceTree = "<group>"; };
+		A76353991D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellmorebtnnormal_24x20_@2x.png"; sourceTree = "<group>"; };
+		A763539A1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellmorebtnnormal_24x20_@3x.png"; sourceTree = "<group>"; };
 		A7CB4F661D7D001B00D2DD09 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CB4F6A1D7D001B00D2DD09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7CB4F6C1D7D001B00D2DD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -655,6 +695,8 @@
 				A7CBD3821D7D1CF000D2DD09 /* Const.h */,
 				A7CBD3861D7D49D900D2DD09 /* BDJDownloader.h */,
 				A7CBD3871D7D49D900D2DD09 /* BDJDownloader.m */,
+				A75974F51D7FF053007027D4 /* NavTitleView.h */,
+				A75974F61D7FF053007027D4 /* NavTitleView.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -806,6 +848,8 @@
 			children = (
 				A7CB4FB61D7D063C00D2DD09 /* EssenceViewController.h */,
 				A7CB4FB71D7D063C00D2DD09 /* EssenceViewController.m */,
+				A75974EF1D7FC0F1007027D4 /* EssenceTableViewController.h */,
+				A75974F01D7FC0F1007027D4 /* EssenceTableViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -815,6 +859,8 @@
 			children = (
 				A7CBD3891D7D4F8C00D2DD09 /* EssenceModel.h */,
 				A7CBD38A1D7D4F8C00D2DD09 /* EssenceModel.m */,
+				A75974F21D7FE9B5007027D4 /* MenuModel.h */,
+				A75974F31D7FE9B5007027D4 /* MenuModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -822,6 +868,9 @@
 		A7CB4FB11D7D018900D2DD09 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A76353931D7E952D00E30B16 /* EssenceVideoCell.h */,
+				A76353941D7E952D00E30B16 /* EssenceVideoCell.m */,
+				A76353951D7E952D00E30B16 /* EssenceVideoCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -870,6 +919,9 @@
 		A7CB4FDF1D7D07B600D2DD09 /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				A76353981D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png */,
+				A76353991D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png */,
+				A763539A1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png */,
 				A7CB4FE01D7D07B600D2DD09 /* cell-button-line.png */,
 				A7CB4FE11D7D07B600D2DD09 /* cell-button-line@2x.png */,
 				A7CB4FE21D7D07B600D2DD09 /* cell-content-line.png */,
@@ -976,6 +1028,16 @@
 		A7CB50371D7D07B600D2DD09 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				A75974F81D7FF8B5007027D4 /* navigationButtonRandom_26x26_@1x.png */,
+				A75974F91D7FF8B5007027D4 /* navigationButtonRandom_26x26_@2x.png */,
+				A75974FA1D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@1x.png */,
+				A75974FB1D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@2x.png */,
+				A75974FC1D7FF8B5007027D4 /* review_post_nav_icon_20x17_@2x.png */,
+				A75974FD1D7FF8B5007027D4 /* review_post_nav_icon_20x17_@3x.png */,
+				A75974FE1D7FF8B5007027D4 /* review_post_nav_icon_20x18_@1x.png */,
+				A75974FF1D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@2x.png */,
+				A75975001D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@3x.png */,
+				A75975011D7FF8B5007027D4 /* review_post_nav_icon_click_20x18_@1x.png */,
 				A7CB50381D7D07B600D2DD09 /* friendsRecommentIcon-click.png */,
 				A7CB50391D7D07B600D2DD09 /* friendsRecommentIcon-click@2x.png */,
 				A7CB503A1D7D07B600D2DD09 /* friendsRecommentIcon-click@3x.png */,
@@ -1243,15 +1305,19 @@
 				A7CB93221D7D07C400D2DD09 /* cell-button-line.png in Resources */,
 				A7CB93351D7D07C400D2DD09 /* imageBackground@2x.png in Resources */,
 				A7CB931E1D7D07C400D2DD09 /* AppIcon72x72@2x~ipad.png in Resources */,
+				A763539D1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png in Resources */,
 				A7CB93601D7D07C400D2DD09 /* tagicon.png in Resources */,
+				A759750A1D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@3x.png in Resources */,
 				A7CB93A91D7D07C400D2DD09 /* publish-audio@3x.png in Resources */,
 				A7CB93A51D7D07C400D2DD09 /* app_slogan@2x.png in Resources */,
 				A7CB933C1D7D07C400D2DD09 /* mainCellCaiClick@2x.png in Resources */,
 				A7CB93881D7D07C400D2DD09 /* mine-moon-icon.png in Resources */,
 				A7CB93341D7D07C400D2DD09 /* imageBackground.png in Resources */,
 				A7CB93491D7D07C400D2DD09 /* playButton.png in Resources */,
+				A75975081D7FF8B5007027D4 /* review_post_nav_icon_20x18_@1x.png in Resources */,
 				A7CB93901D7D07C400D2DD09 /* mine-setting-icon@3x.png in Resources */,
 				A7CB93801D7D07C400D2DD09 /* MainTagSubIconClick.png in Resources */,
+				A759750B1D7FF8B5007027D4 /* review_post_nav_icon_click_20x18_@1x.png in Resources */,
 				A7CB93971D7D07C400D2DD09 /* nav_coin_icon.png in Resources */,
 				A7CB93B11D7D07C400D2DD09 /* publish-review@2x.png in Resources */,
 				A7CB938E1D7D07C400D2DD09 /* mine-setting-icon.png in Resources */,
@@ -1260,6 +1326,7 @@
 				A7CB93741D7D07C400D2DD09 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				A7CB938D1D7D07C400D2DD09 /* mine-setting-icon-click@3x.png in Resources */,
 				A7CB93BD1D7D07C400D2DD09 /* pushguidemid.png in Resources */,
+				A75975031D7FF8B5007027D4 /* navigationButtonRandom_26x26_@2x.png in Resources */,
 				A7CB93AB1D7D07C400D2DD09 /* publish-offline@2x.png in Resources */,
 				A7CB93681D7D07C400D2DD09 /* FollowBtnClickBg.png in Resources */,
 				A7CB93B91D7D07C400D2DD09 /* pushguidebg.png in Resources */,
@@ -1267,6 +1334,7 @@
 				A7CB93621D7D07C400D2DD09 /* tagicon@3x.png in Resources */,
 				A7CB93AC1D7D07C400D2DD09 /* publish-offline@3x.png in Resources */,
 				A7CB93C21D7D07C400D2DD09 /* pushguidetop@3x.png in Resources */,
+				A75975041D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@1x.png in Resources */,
 				A7CBD3661D7D07C800D2DD09 /* tabBar_me_click_icon.png in Resources */,
 				A7CB934E1D7D07C400D2DD09 /* playButtonClick@3x.png in Resources */,
 				A7CB93361D7D07C400D2DD09 /* imageBackground@3x.png in Resources */,
@@ -1313,6 +1381,7 @@
 				A7CB93A31D7D07C400D2DD09 /* navigationButtonReturnClick@3x.png in Resources */,
 				A7CB93261D7D07C400D2DD09 /* cellFollowClickIcon.png in Resources */,
 				A7CB93931D7D07C400D2DD09 /* mine-sun-icon-click@3x.png in Resources */,
+				A75975021D7FF8B5007027D4 /* navigationButtonRandom_26x26_@1x.png in Resources */,
 				A7CB93841D7D07C400D2DD09 /* MainTitle@2x.png in Resources */,
 				A7CB93A11D7D07C400D2DD09 /* navigationButtonReturnClick.png in Resources */,
 				A7CB93191D7D07C400D2DD09 /* AppIcon50x50~ipad.png in Resources */,
@@ -1325,6 +1394,7 @@
 				A7CB93441D7D07C400D2DD09 /* mainCellDingClick@2x.png in Resources */,
 				A7CBD36F1D7D07C800D2DD09 /* tabBar_new_icon.png in Resources */,
 				A7CB931D1D7D07C400D2DD09 /* AppIcon60x60@3x.png in Resources */,
+				A76353971D7E952D00E30B16 /* EssenceVideoCell.xib in Resources */,
 				A7CB93311D7D07C400D2DD09 /* defaultUserIcon.png in Resources */,
 				A7CB93101D7D07C400D2DD09 /* AppIcon29x29@2x.png in Resources */,
 				A7CB93461D7D07C400D2DD09 /* mainCellShare@2x.png in Resources */,
@@ -1392,6 +1462,8 @@
 				A7CBD35D1D7D07C800D2DD09 /* tabBar_essence_icon.png in Resources */,
 				A7CB93231D7D07C400D2DD09 /* cell-button-line@2x.png in Resources */,
 				A7CBD3641D7D07C800D2DD09 /* tabBar_friendTrends_icon@2x.png in Resources */,
+				A75975061D7FF8B5007027D4 /* review_post_nav_icon_20x17_@2x.png in Resources */,
+				A763539C1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png in Resources */,
 				A7CBD36B1D7D07C800D2DD09 /* tabBar_me_icon@3x.png in Resources */,
 				A7CB93771D7D07C400D2DD09 /* friendsRecommentIcon-click.png in Resources */,
 				A7CBD3581D7D07C800D2DD09 /* tabbar-light.png in Resources */,
@@ -1419,11 +1491,14 @@
 				A7CB938F1D7D07C400D2DD09 /* mine-setting-icon@2x.png in Resources */,
 				A7CB931F1D7D07C400D2DD09 /* AppIcon72x72~ipad.png in Resources */,
 				A7CBD36D1D7D07C800D2DD09 /* tabBar_new_click_icon@2x.png in Resources */,
+				A763539B1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png in Resources */,
 				A7CB934A1D7D07C400D2DD09 /* playButton@2x.png in Resources */,
 				A7CB936C1D7D07C400D2DD09 /* friendsTrend_login_click.png in Resources */,
+				A75975071D7FF8B5007027D4 /* review_post_nav_icon_20x17_@3x.png in Resources */,
 				A7CBD35E1D7D07C800D2DD09 /* tabBar_essence_icon@2x.png in Resources */,
 				A7CBD3721D7D07C800D2DD09 /* tabBar_publish_click_icon.png in Resources */,
 				A7CB937E1D7D07C400D2DD09 /* MainTagSubIcon@2x.png in Resources */,
+				A75975091D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@2x.png in Resources */,
 				A7CBD3751D7D07C800D2DD09 /* tabBar_publish_icon.png in Resources */,
 				A7CB93251D7D07C400D2DD09 /* cell-content-line@2x.png in Resources */,
 				A7CB936B1D7D07C400D2DD09 /* friendsTrend_login@2x.png in Resources */,
@@ -1431,6 +1506,7 @@
 				A7CB93A71D7D07C400D2DD09 /* publish-audio.png in Resources */,
 				A7CBD3601D7D07C800D2DD09 /* tabBar_friendTrends_click_icon.png in Resources */,
 				A7CB93811D7D07C400D2DD09 /* MainTagSubIconClick@2x.png in Resources */,
+				A75975051D7FF8B5007027D4 /* navigationButtonRandomClick_26x26_@2x.png in Resources */,
 				A7CB935E1D7D07C400D2DD09 /* see-big-picture@2x.png in Resources */,
 				A7CB935A1D7D07C400D2DD09 /* Profile_AddV_authen@3x.png in Resources */,
 				A7CB93631D7D07C400D2DD09 /* video-play.png in Resources */,
@@ -1517,6 +1593,8 @@
 				A7CBD37A1D7D137C00D2DD09 /* BDJTabBar.m in Sources */,
 				A7CBD37E1D7D14EB00D2DD09 /* UIButton+Util.m in Sources */,
 				A7CB4F711D7D001B00D2DD09 /* ViewController.m in Sources */,
+				A75974F11D7FC0F1007027D4 /* EssenceTableViewController.m in Sources */,
+				A75974F41D7FE9B5007027D4 /* MenuModel.m in Sources */,
 				A7CBD38B1D7D4F8C00D2DD09 /* EssenceModel.m in Sources */,
 				A7CB4FC71D7D06C000D2DD09 /* ProfileViewController.m in Sources */,
 				A7CB4FB51D7D061100D2DD09 /* BaseViewController.m in Sources */,
@@ -1524,8 +1602,10 @@
 				A7CB4FC41D7D06B500D2DD09 /* FollowViewController.m in Sources */,
 				A7CBD3881D7D49D900D2DD09 /* BDJDownloader.m in Sources */,
 				A7CB4FBE1D7D067200D2DD09 /* AddViewController.m in Sources */,
+				A76353961D7E952D00E30B16 /* EssenceVideoCell.m in Sources */,
 				A7CB4FCA1D7D07A500D2DD09 /* MainTabBarController.m in Sources */,
 				A7CB4FBB1D7D065A00D2DD09 /* NewsViewController.m in Sources */,
+				A75974F71D7FF053007027D4 /* NavTitleView.m in Sources */,
 				A7CB4FB81D7D063C00D2DD09 /* EssenceViewController.m in Sources */,
 				A7CB4F6B1D7D001B00D2DD09 /* main.m in Sources */,
 				A7CBD3851D7D266B00D2DD09 /* UIView+Uitl.m in Sources */,

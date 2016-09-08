@@ -7,7 +7,8 @@
 //
 
 #import "BaseViewController.h"
-
+@class SubMenuModel;
 @interface NewsViewController : BaseViewController
-
+//导航上面的标题;
+@property (nonatomic ,strong)SubMenuModel *subModel;
 @end

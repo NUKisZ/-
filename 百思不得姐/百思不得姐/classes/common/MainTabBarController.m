@@ -8,6 +8,9 @@
 
 #import "MainTabBarController.h"
 #import "BDJTabBar.h"
+#import "MenuModel.h"
+#import "EssenceViewController.h"
+#import "NewsViewController.h"
 
 @interface MainTabBarController ()
 
@@ -26,7 +29,31 @@
     //使用自定制tabBar
     [self setValue:[[BDJTabBar alloc]init] forKey:@"tabBar"];
     
+    
+    //请求导航标题列表
+    [self downloadNavList];
+    
+    
 }
+- (void)downloadNavList{
+    __weak typeof(self) weakSelf = self;
+    [BDJDownloader downloadWithUrlString:kNavBarTitleListUrl finish:^(NSData *data) {
+        //解析数据
+        MenuModel *model = [[MenuModel alloc]initWithData:data error:nil];
+        //将数据传给精华和最新的界面
+        //精华
+         UINavigationController *eNavCtrl = (UINavigationController *)[weakSelf.viewControllers firstObject];
+        EssenceViewController *eCtrl = (EssenceViewController *)[eNavCtrl.viewControllers firstObject];
+        eCtrl.subModel = model.menus[0];
+//        UINavigationController *nNavCtrl = (UINavigationController *)[weakSelf.viewControllers firstObject];
+//        NewsViewController *nCtrl = (NewsViewController *)[nNavCtrl.viewControllers objectAtIndex:1];
+//        nCtrl.subModel = model.menus[1];
+        
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
+}
+
 //添加子视图控制器
 /**
  
