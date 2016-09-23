@@ -30,7 +30,6 @@
     return [[JSONKeyMapper alloc] initWithDictionary:@{@"id":@"commentId"}];
 }
 
-
 @end
 
 @implementation TagModel
@@ -43,15 +42,17 @@
 
 @implementation UserModel
 
-
-
 @end
 
 @implementation VideoModel
 
+@end
+@implementation ImageModel
 
 @end
+@implementation GifModel
 
-
-
+@end
+@implementation AudioModel
+@end
 

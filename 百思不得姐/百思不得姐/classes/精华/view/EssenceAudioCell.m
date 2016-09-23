@@ -6,20 +6,19 @@
 //  Copyright © 2016年 NUK. All rights reserved.
 //
 
-#import "EssenceVideoCell.h"
+#import "EssenceAudioCell.h"
 #import "EssenceModel.h"
 
-@interface EssenceVideoCell ()
+@interface EssenceAudioCell ()
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *videlImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *audioImageView;
 @property (weak, nonatomic) IBOutlet UILabel *playTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *playNumLabel;
-@property (weak, nonatomic) IBOutlet UIView *commentView;
-@property (weak, nonatomic) IBOutlet UILabel *commentLabel;
+
 @property (weak, nonatomic) IBOutlet UIView *tagView;
 @property (weak, nonatomic) IBOutlet UILabel *tagLabel;
 @property (weak, nonatomic) IBOutlet UIButton *loveButton;
@@ -27,26 +26,18 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 //图片的高度
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoImageHCon;
-//comment的高度
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewHCon;
-
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewYCon;
-
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *audioImageHCon;
 
 @end
 
 
 
 
-@implementation EssenceVideoCell
+@implementation EssenceAudioCell
 
 - (IBAction)favoriteButtonAction:(id)sender {
 }
 - (IBAction)videoPlayButton:(id)sender {
-    [self.delegate didSelectorVideoWithUrl:[self.model.video.video firstObject]];
-    
 }
 - (IBAction)loveButtonAction:(id)sender {
 }
@@ -66,19 +57,19 @@
     self.descLabel.text = model.passtime;
     self.contentLabel.text = model.text;
     //视频的图片
-    NSString *picName = [model.video.thumbnail_small firstObject];
-    [self.videlImageView sd_setImageWithURL:[NSURL URLWithString:picName]];
+    NSString *picName = [model.audio.thumbnail firstObject];
+    [self.audioImageView sd_setImageWithURL:[NSURL URLWithString:picName]];
     //视频图片
-    self.videoImageHCon.constant = self.videlImageView.size.width*model.video.height/model.video.width;
+    self.audioImageHCon.constant = self.audioImageView.size.width*model.audio.height/model.audio.width;
     
     
     //播放的次数
     
-    self.playNumLabel.text = [NSString stringWithFormat:@"%ld播放",model.video.playcount];
+    self.playNumLabel.text = [NSString stringWithFormat:@"%ld播放",model.audio.playcount];
     
     //视频时长
     NSMutableString *timeStr = [NSMutableString string];
-    NSInteger duration = model.video.duration;
+    NSInteger duration = model.audio.duration;
     //小时
     if (duration > 3600){
         [timeStr appendFormat:@"%02ld:",duration/3600 ];
@@ -94,20 +85,7 @@
     
     //热评
     
-    //修改背景视图的显示状态和高度
-    if (model.top_comment == nil) {
-        //隐藏
-        self.commentView.hidden = YES;
-        
-    }else{
-        
-        //显示 (因为cell重用可能隐藏了评论)
-        self.commentView.hidden = NO;
-        
-        NSString *commentStr = [NSString stringWithFormat:@"%@:%@",model.top_comment.u.name, model.top_comment.content];
-        self.commentLabel.text = commentStr;
-        
-    }
+    
     
     
     
@@ -135,31 +113,23 @@
     [self.commentButton setTitle:model.comment forState:UIControlStateNormal];
     [self.commentButton setTitle:model.comment forState:UIControlStateSelected];
     
-    //强制刷新cell,也就是按照数据全部显示一次.
-    [self layoutIfNeeded];
     
-    //修改背景视图的显示状态
-    if (model.top_comment == nil){
-        //隐藏
-        self.commentView.hidden = YES;
-        self.commentViewHCon.constant = 0;
-        self.commentViewYCon.constant = 0;
-    }else{
-        //显示
-        self.commentViewYCon.constant = 14;
-        self.commentViewHCon.constant = self.commentLabel.height+8;
-    }
+    
+    
     
     //强制刷新cell,也就是按照数据全部显示一次.
     [self layoutIfNeeded];
 
     _model.cellHeight = @((CGFloat)CGRectGetMaxY(self.commentButton.frame)+10);
     
+    
 }
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
     
     
 }

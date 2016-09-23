@@ -14,8 +14,23 @@
 
 @implementation NewsViewController
 
+//这个方法是用来初始化self.view
+//- (void)loadView{
+//    [super loadView];
+//    self.rightImageName = @"review_post_nav_icon_20x17_";
+//    self.rightSelectImageName = @"review_post_nav_icon_click_20x17_";
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.rightImageName = @"review_post_nav_icon_20x17_";
+    self.rightSelectImageName = @"review_post_nav_icon_click_20x17_";
+    //显示导航标题数据
+    if (self.subModel) {
+        [self showData];
+    }
+    //review_post_nav_icon_20x17_
+    //review_post_nav_icon_click_20x17_
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +39,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -9,7 +9,12 @@
 #import "EssenceTableViewController.h"
 #import "EssenceModel.h"
 #import "EssenceVideoCell.h"
-@interface EssenceTableViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "EssenceTextCell.h"
+#import "EssenceImageCell.h"
+#import "EssenceAudioCell.h"
+#import "EssenceGifCell.h"
+#import "MoviePlayerViewController.h"
+@interface EssenceTableViewController ()<UITableViewDelegate,UITableViewDataSource,EssenceVideoCellDelegate>
 /** 分页 */
 @property (nonatomic ,assign)NSInteger lastTime;
 /** 表格 */
@@ -38,6 +43,81 @@
     self.tbView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMOre)];
     
 }
+//图片cell
+- (UITableViewCell *)createImageCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath{
+    [[SDImageCache sharedImageCache] clearMemory];
+    static NSString *cellId = @"imageCellId";
+    EssenceImageCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil){
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"EssenceImageCell" owner:nil options:nil]lastObject];
+    }
+    ListModel *model = self.dataModel.list[indexPath.row];
+    cell.model = model;
+    return cell;
+}
+//声音cell
+- (UITableViewCell *)createVoiceCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath{
+    [[SDImageCache sharedImageCache] clearMemory];
+    static NSString *cellId = @"audioCellId";
+    EssenceAudioCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil){
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"EssenceAudioCell" owner:nil options:nil]lastObject];
+    }
+    ListModel *model = self.dataModel.list[indexPath.row];
+    cell.model = model;
+    return cell;
+}
+//文字cell
+- (UITableViewCell *)createTextCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath{
+    [[SDImageCache sharedImageCache] clearMemory];
+    static NSString *cellId = @"textCellId";
+    EssenceTextCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil){
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"EssenceTextCell" owner:nil options:nil]lastObject];
+    }
+    ListModel *model = self.dataModel.list[indexPath.row];
+    cell.model = model;
+    return cell;
+    
+}
+//gifcell
+- (UITableViewCell *)createGifCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath{
+    [[SDImageCache sharedImageCache] clearMemory];
+    static NSString *cellId = @"gifCellId";
+    EssenceGifCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil){
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"EssenceGifCell" owner:nil options:nil]lastObject];
+    }
+    ListModel *model = self.dataModel.list[indexPath.row];
+    cell.model = model;
+    return cell;
+}
+//html
+- (UITableViewCell *)createHtmlCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath{
+    return [[UITableViewCell alloc]init];
+}
+
+//视频cell
+- (UITableViewCell *)createVideoCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath{
+    [[SDImageCache sharedImageCache] clearMemory];
+    static NSString *cellId = @"videoCellId";
+    EssenceVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"EssenceVideoCell" owner:nil options:nil]lastObject];
+    }
+    cell.delegate = self;
+    cell.model = self.dataModel.list[indexPath.row];
+    return  cell;
+
+}
+- (void)didSelectorVideoWithUrl:(NSString *)videoString{
+    [self.delegate didPlayVideoWithUrlString:videoString];
+//    MoviePlayerViewController *movieCtrl = [[MoviePlayerViewController alloc]init];
+//    movieCtrl.videoString = videoString;
+//    [self presentViewController:movieCtrl animated:YES completion:nil];
+    
+    
+}
 - (void)loadFirstPate{
     self.lastTime = 0;
     [self downloadData];
@@ -59,7 +139,10 @@
     [self createTabBleView];
 }
 - (void)downloadData{
-    NSString *urlString = [NSString stringWithFormat:kEVidelUrl,self.lastTime];
+    NSMutableString *urlString = [NSMutableString stringWithString:self.urlPrefix];
+    
+    [urlString appendFormat:kEssenceSuffixUrl,self.lastTime];
+    
     __weak typeof(self) weakSelf = self;
     [BDJDownloader downloadWithUrlString:urlString finish:^(NSData *data) {
         
@@ -68,6 +151,7 @@
         
         if (self.lastTime == 0){
             weakSelf.dataModel = model;
+            
         }else{
             
             //这样写也是可以的
@@ -81,7 +165,7 @@
             
             NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, weakSelf.dataModel.list.count)];
             [model.list insertObjects:weakSelf.dataModel.list atIndexes:indexSet];
-            weakSelf.dataModel.list = model.list;
+            weakSelf.dataModel = model;
             
         }
         
@@ -104,14 +188,25 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellId = @"videoCellId";
-    EssenceVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (cell == nil) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"EssenceVideoCell" owner:nil options:nil]lastObject];
+    UITableViewCell *cell = nil;
+    ListModel *model = self.dataModel.list[indexPath.row];
+    if ([model.type isEqualToString:@"video"]){
+        cell = [self createVideoCellForTableView:tableView atIndexPath:indexPath];
+    }else if ([model.type isEqualToString:@"image"]){
+        cell = [self createImageCellForTableView:tableView atIndexPath:indexPath];
+    }else if ([model.type isEqualToString:@"gif"]){
+        cell = [self createGifCellForTableView:tableView atIndexPath:indexPath];
+    }else if ([model.type isEqualToString:@"text"]){
+        cell = [self createTextCellForTableView:tableView atIndexPath:indexPath];
+    }else if ([model.type isEqualToString:@"html"]){
+        cell = [self createHtmlCellForTableView:tableView atIndexPath:indexPath];
+    }else if ([model.type isEqualToString:@"audio"]){
+        cell = [self createVoiceCellForTableView:tableView atIndexPath:indexPath];
     }
-    cell.model = self.dataModel.list[indexPath.row];
-    return  cell;
-    
+    else{
+        cell = [[UITableViewCell alloc]init];
+    }
+    return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     ListModel *model = self.dataModel.list[indexPath.row];

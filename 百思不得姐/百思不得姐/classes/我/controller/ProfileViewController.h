@@ -7,7 +7,9 @@
 //
 
 #import "BaseViewController.h"
-
+@class MDButton;
 @interface ProfileViewController : BaseViewController
+/** <#注释#> */
+@property (nonatomic ,strong)MDButton *btn;
 
 @end

@@ -7,17 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @class ListModel;
-@protocol EssenceVideoCellDelegate <NSObject>
 
-- (void)didSelectorVideoWithUrl:(NSString *)videoString;
-
-@end
-
-@interface EssenceVideoCell : UITableViewCell
+@interface EssenceTextCell : UITableViewCell
 
 @property (nonatomic ,strong)ListModel *model;
-@property (nonatomic ,weak)id<EssenceVideoCellDelegate> delegate;
 
 @end

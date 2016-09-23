@@ -26,6 +26,19 @@
 		A763539B1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A76353981D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png */; };
 		A763539C1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A76353991D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png */; };
 		A763539D1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A763539A1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png */; };
+		A7800FEC1D811AF8000FBC3C /* BDJNavTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7800FEB1D811AF8000FBC3C /* BDJNavTitleViewController.m */; };
+		A7800FF01D813F74000FBC3C /* EssenceTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7800FEE1D813F74000FBC3C /* EssenceTextCell.m */; };
+		A7800FF11D813F74000FBC3C /* EssenceTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7800FEF1D813F74000FBC3C /* EssenceTextCell.xib */; };
+		A7800FF41D81AFC5000FBC3C /* bt-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A7800FF21D81AFC5000FBC3C /* bt-icon1.png */; };
+		A7800FF51D81AFC5000FBC3C /* bt-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = A7800FF31D81AFC5000FBC3C /* bt-icon2.png */; };
+		A78158251D82508300425243 /* EssenceAudioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A78158201D82508300425243 /* EssenceAudioCell.m */; };
+		A78158261D82508300425243 /* EssenceAudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78158211D82508300425243 /* EssenceAudioCell.xib */; };
+		A78158271D82508300425243 /* EssenceImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A78158231D82508300425243 /* EssenceImageCell.m */; };
+		A78158281D82508300425243 /* EssenceImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78158241D82508300425243 /* EssenceImageCell.xib */; };
+		A78158371D8261F700425243 /* EssenceGifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A78158351D8261F700425243 /* EssenceGifCell.m */; };
+		A78158381D8261F700425243 /* EssenceGifCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78158361D8261F700425243 /* EssenceGifCell.xib */; };
+		A7A4F5CA1D91610800958D14 /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A4F5C91D91610800958D14 /* MoviePlayerViewController.m */; };
+		A7A4F5CC1D91615700958D14 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A4F5CB1D91615700958D14 /* MediaPlayer.framework */; };
 		A7CB4F6B1D7D001B00D2DD09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CB4F6A1D7D001B00D2DD09 /* main.m */; };
 		A7CB4F6E1D7D001B00D2DD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CB4F6D1D7D001B00D2DD09 /* AppDelegate.m */; };
 		A7CB4F711D7D001B00D2DD09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CB4F701D7D001B00D2DD09 /* ViewController.m */; };
@@ -302,6 +315,25 @@
 		A76353981D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellmorebtnnormal_24x20_@1x.png"; sourceTree = "<group>"; };
 		A76353991D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellmorebtnnormal_24x20_@2x.png"; sourceTree = "<group>"; };
 		A763539A1D7E9B1C00E30B16 /* cellmorebtnnormal_24x20_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellmorebtnnormal_24x20_@3x.png"; sourceTree = "<group>"; };
+		A7800FEA1D811AF8000FBC3C /* BDJNavTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJNavTitleViewController.h; sourceTree = "<group>"; };
+		A7800FEB1D811AF8000FBC3C /* BDJNavTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJNavTitleViewController.m; sourceTree = "<group>"; };
+		A7800FED1D813F74000FBC3C /* EssenceTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceTextCell.h; sourceTree = "<group>"; };
+		A7800FEE1D813F74000FBC3C /* EssenceTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceTextCell.m; sourceTree = "<group>"; };
+		A7800FEF1D813F74000FBC3C /* EssenceTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceTextCell.xib; sourceTree = "<group>"; };
+		A7800FF21D81AFC5000FBC3C /* bt-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-icon1.png"; sourceTree = "<group>"; };
+		A7800FF31D81AFC5000FBC3C /* bt-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-icon2.png"; sourceTree = "<group>"; };
+		A781581F1D82508300425243 /* EssenceAudioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceAudioCell.h; sourceTree = "<group>"; };
+		A78158201D82508300425243 /* EssenceAudioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceAudioCell.m; sourceTree = "<group>"; };
+		A78158211D82508300425243 /* EssenceAudioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceAudioCell.xib; sourceTree = "<group>"; };
+		A78158221D82508300425243 /* EssenceImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceImageCell.h; sourceTree = "<group>"; };
+		A78158231D82508300425243 /* EssenceImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceImageCell.m; sourceTree = "<group>"; };
+		A78158241D82508300425243 /* EssenceImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceImageCell.xib; sourceTree = "<group>"; };
+		A78158341D8261F700425243 /* EssenceGifCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceGifCell.h; sourceTree = "<group>"; };
+		A78158351D8261F700425243 /* EssenceGifCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceGifCell.m; sourceTree = "<group>"; };
+		A78158361D8261F700425243 /* EssenceGifCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceGifCell.xib; sourceTree = "<group>"; };
+		A7A4F5C81D91610800958D14 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
+		A7A4F5C91D91610800958D14 /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerViewController.m; sourceTree = "<group>"; };
+		A7A4F5CB1D91615700958D14 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A7CB4F661D7D001B00D2DD09 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CB4F6A1D7D001B00D2DD09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7CB4F6C1D7D001B00D2DD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -564,6 +596,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A4F5CC1D91615700958D14 /* MediaPlayer.framework in Frameworks */,
 				6E6EACD32D696851E100447A /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +630,7 @@
 		407E5E42440A7FC5CA4102C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7A4F5CB1D91615700958D14 /* MediaPlayer.framework */,
 				DAE9D4C13F494EEC5601472E /* libPods-百思不得姐.a */,
 			);
 			name = Frameworks;
@@ -850,6 +884,10 @@
 				A7CB4FB71D7D063C00D2DD09 /* EssenceViewController.m */,
 				A75974EF1D7FC0F1007027D4 /* EssenceTableViewController.h */,
 				A75974F01D7FC0F1007027D4 /* EssenceTableViewController.m */,
+				A7800FEA1D811AF8000FBC3C /* BDJNavTitleViewController.h */,
+				A7800FEB1D811AF8000FBC3C /* BDJNavTitleViewController.m */,
+				A7A4F5C81D91610800958D14 /* MoviePlayerViewController.h */,
+				A7A4F5C91D91610800958D14 /* MoviePlayerViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -868,6 +906,18 @@
 		A7CB4FB11D7D018900D2DD09 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A78158341D8261F700425243 /* EssenceGifCell.h */,
+				A78158351D8261F700425243 /* EssenceGifCell.m */,
+				A78158361D8261F700425243 /* EssenceGifCell.xib */,
+				A781581F1D82508300425243 /* EssenceAudioCell.h */,
+				A78158201D82508300425243 /* EssenceAudioCell.m */,
+				A78158211D82508300425243 /* EssenceAudioCell.xib */,
+				A78158221D82508300425243 /* EssenceImageCell.h */,
+				A78158231D82508300425243 /* EssenceImageCell.m */,
+				A78158241D82508300425243 /* EssenceImageCell.xib */,
+				A7800FED1D813F74000FBC3C /* EssenceTextCell.h */,
+				A7800FEE1D813F74000FBC3C /* EssenceTextCell.m */,
+				A7800FEF1D813F74000FBC3C /* EssenceTextCell.xib */,
 				A76353931D7E952D00E30B16 /* EssenceVideoCell.h */,
 				A76353941D7E952D00E30B16 /* EssenceVideoCell.m */,
 				A76353951D7E952D00E30B16 /* EssenceVideoCell.xib */,
@@ -878,6 +928,8 @@
 		A7CB4FB21D7D018900D2DD09 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				A7800FF21D81AFC5000FBC3C /* bt-icon1.png */,
+				A7800FF31D81AFC5000FBC3C /* bt-icon2.png */,
 				A7CB4FCB1D7D07B600D2DD09 /* AppIcon */,
 				A7CB4FDF1D7D07B600D2DD09 /* Essence */,
 				A7CB50241D7D07B600D2DD09 /* FriendTrends */,
@@ -1310,6 +1362,8 @@
 				A759750A1D7FF8B5007027D4 /* review_post_nav_icon_click_20x17_@3x.png in Resources */,
 				A7CB93A91D7D07C400D2DD09 /* publish-audio@3x.png in Resources */,
 				A7CB93A51D7D07C400D2DD09 /* app_slogan@2x.png in Resources */,
+				A78158281D82508300425243 /* EssenceImageCell.xib in Resources */,
+				A7800FF11D813F74000FBC3C /* EssenceTextCell.xib in Resources */,
 				A7CB933C1D7D07C400D2DD09 /* mainCellCaiClick@2x.png in Resources */,
 				A7CB93881D7D07C400D2DD09 /* mine-moon-icon.png in Resources */,
 				A7CB93341D7D07C400D2DD09 /* imageBackground.png in Resources */,
@@ -1397,6 +1451,7 @@
 				A76353971D7E952D00E30B16 /* EssenceVideoCell.xib in Resources */,
 				A7CB93311D7D07C400D2DD09 /* defaultUserIcon.png in Resources */,
 				A7CB93101D7D07C400D2DD09 /* AppIcon29x29@2x.png in Resources */,
+				A7800FF51D81AFC5000FBC3C /* bt-icon2.png in Resources */,
 				A7CB93461D7D07C400D2DD09 /* mainCellShare@2x.png in Resources */,
 				A7CBD3711D7D07C800D2DD09 /* tabBar_new_icon@3x.png in Resources */,
 				A7CB93BA1D7D07C400D2DD09 /* pushguidebot.png in Resources */,
@@ -1453,6 +1508,7 @@
 				A7CB93241D7D07C400D2DD09 /* cell-content-line.png in Resources */,
 				A7CBD36E1D7D07C800D2DD09 /* tabBar_new_click_icon@3x.png in Resources */,
 				A7CB93391D7D07C400D2DD09 /* mainCellCai.png in Resources */,
+				A78158381D8261F700425243 /* EssenceGifCell.xib in Resources */,
 				A7CB4F741D7D001B00D2DD09 /* Main.storyboard in Resources */,
 				A7CB937D1D7D07C400D2DD09 /* MainTagSubIcon.png in Resources */,
 				A7CB935C1D7D07C400D2DD09 /* see-big-picture-background@2x.png in Resources */,
@@ -1469,6 +1525,7 @@
 				A7CBD3581D7D07C800D2DD09 /* tabbar-light.png in Resources */,
 				A7CBD36A1D7D07C800D2DD09 /* tabBar_me_icon@2x.png in Resources */,
 				A7CB939D1D7D07C400D2DD09 /* navigationbarBackgroundWhite.png in Resources */,
+				A7800FF41D81AFC5000FBC3C /* bt-icon1.png in Resources */,
 				A7CB93571D7D07C400D2DD09 /* post_placeholderImage@3x.png in Resources */,
 				A7CB93651D7D07C400D2DD09 /* video-play@3x.png in Resources */,
 				A7CB93331D7D07C400D2DD09 /* defaultUserIcon@3x.png in Resources */,
@@ -1511,6 +1568,7 @@
 				A7CB935A1D7D07C400D2DD09 /* Profile_AddV_authen@3x.png in Resources */,
 				A7CB93631D7D07C400D2DD09 /* video-play.png in Resources */,
 				A7CB93401D7D07C400D2DD09 /* mainCellCommentClick@2x.png in Resources */,
+				A78158261D82508300425243 /* EssenceAudioCell.xib in Resources */,
 				A7CB93171D7D07C400D2DD09 /* AppIcon40x40~ipad.png in Resources */,
 				A7CB936A1D7D07C400D2DD09 /* friendsTrend_login.png in Resources */,
 				A7CB93B71D7D07C400D2DD09 /* publish-video@2x.png in Resources */,
@@ -1590,14 +1648,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7800FEC1D811AF8000FBC3C /* BDJNavTitleViewController.m in Sources */,
 				A7CBD37A1D7D137C00D2DD09 /* BDJTabBar.m in Sources */,
+				A78158271D82508300425243 /* EssenceImageCell.m in Sources */,
+				A78158371D8261F700425243 /* EssenceGifCell.m in Sources */,
 				A7CBD37E1D7D14EB00D2DD09 /* UIButton+Util.m in Sources */,
 				A7CB4F711D7D001B00D2DD09 /* ViewController.m in Sources */,
 				A75974F11D7FC0F1007027D4 /* EssenceTableViewController.m in Sources */,
+				A78158251D82508300425243 /* EssenceAudioCell.m in Sources */,
 				A75974F41D7FE9B5007027D4 /* MenuModel.m in Sources */,
 				A7CBD38B1D7D4F8C00D2DD09 /* EssenceModel.m in Sources */,
 				A7CB4FC71D7D06C000D2DD09 /* ProfileViewController.m in Sources */,
 				A7CB4FB51D7D061100D2DD09 /* BaseViewController.m in Sources */,
+				A7800FF01D813F74000FBC3C /* EssenceTextCell.m in Sources */,
 				A7CB4F6E1D7D001B00D2DD09 /* AppDelegate.m in Sources */,
 				A7CB4FC41D7D06B500D2DD09 /* FollowViewController.m in Sources */,
 				A7CBD3881D7D49D900D2DD09 /* BDJDownloader.m in Sources */,
@@ -1608,6 +1671,7 @@
 				A75974F71D7FF053007027D4 /* NavTitleView.m in Sources */,
 				A7CB4FB81D7D063C00D2DD09 /* EssenceViewController.m in Sources */,
 				A7CB4F6B1D7D001B00D2DD09 /* main.m in Sources */,
+				A7A4F5CA1D91610800958D14 /* MoviePlayerViewController.m in Sources */,
 				A7CBD3851D7D266B00D2DD09 /* UIView+Uitl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

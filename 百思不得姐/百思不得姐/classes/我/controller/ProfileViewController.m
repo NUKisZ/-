@@ -7,8 +7,9 @@
 //
 
 #import "ProfileViewController.h"
+#import "MDButton.h"
 
-@interface ProfileViewController ()
+@interface ProfileViewController ()<MDButtonDelegate>
 
 @end
 
@@ -16,9 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
+    self.btn = [[MDButton alloc]initWithFrame:CGRectMake(100, 200, 80, 40) type:MDButtonTypeFloatingAction rippleColor:[UIColor redColor]];
+    self.btn.mdButtonDelegate = self;
+    
+    [self.view addSubview:self.btn];
 }
-
+- (void)rotationStarted:(id)sender{
+    if (self.btn == sender){
+        NSLog(@"==");
+    }
+}
+- (void)rotationCompleted:(id)sender{
+    if (self.btn == sender){
+        NSLog(@"++");
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

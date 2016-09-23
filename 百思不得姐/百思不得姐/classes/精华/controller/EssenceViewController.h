@@ -6,10 +6,11 @@
 //  Copyright © 2016年 NUK. All rights reserved.
 //
 
-#import "BaseViewController.h"
-@class SubMenuModel;
-@interface EssenceViewController : BaseViewController
 
-@property (nonatomic ,strong)SubMenuModel *subModel;
+#import "BDJNavTitleViewController.h"
+
+@interface EssenceViewController : BDJNavTitleViewController
+
+
 
 @end

@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol EssenceTableViewControllerDelegate <NSObject>
+
+- (void)didPlayVideoWithUrlString:(NSString *)videoString;
+
+@end
 @interface EssenceTableViewController : UIViewController
+/** 网络请求的前缀 */
+@property (nonatomic ,copy)NSString *urlPrefix;
+@property (nonatomic ,weak)id<EssenceTableViewControllerDelegate> delegate;
 
 @end

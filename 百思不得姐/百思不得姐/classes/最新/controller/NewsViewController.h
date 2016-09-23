@@ -6,9 +6,7 @@
 //  Copyright © 2016年 NUK. All rights reserved.
 //
 
-#import "BaseViewController.h"
-@class SubMenuModel;
-@interface NewsViewController : BaseViewController
+#import "BDJNavTitleViewController.h"
+@interface NewsViewController : BDJNavTitleViewController
 //导航上面的标题;
-@property (nonatomic ,strong)SubMenuModel *subModel;
 @end

@@ -6,18 +6,18 @@
 //  Copyright © 2016年 NUK. All rights reserved.
 //
 
-#import "EssenceVideoCell.h"
+#import "EssenceGifCell.h"
 #import "EssenceModel.h"
 
-@interface EssenceVideoCell ()
+@interface EssenceGifCell ()
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *videlImageView;
-@property (weak, nonatomic) IBOutlet UILabel *playTimeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *playNumLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *bigImageView;
+
+
 @property (weak, nonatomic) IBOutlet UIView *commentView;
 @property (weak, nonatomic) IBOutlet UILabel *commentLabel;
 @property (weak, nonatomic) IBOutlet UIView *tagView;
@@ -27,7 +27,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 //图片的高度
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoImageHCon;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bigImageViewHCon;
+
 //comment的高度
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewHCon;
 
@@ -40,14 +42,11 @@
 
 
 
-@implementation EssenceVideoCell
+@implementation EssenceGifCell
 
 - (IBAction)favoriteButtonAction:(id)sender {
 }
-- (IBAction)videoPlayButton:(id)sender {
-    [self.delegate didSelectorVideoWithUrl:[self.model.video.video firstObject]];
-    
-}
+
 - (IBAction)loveButtonAction:(id)sender {
 }
 - (IBAction)hateButtonAction:(id)sender {
@@ -66,31 +65,20 @@
     self.descLabel.text = model.passtime;
     self.contentLabel.text = model.text;
     //视频的图片
-    NSString *picName = [model.video.thumbnail_small firstObject];
-    [self.videlImageView sd_setImageWithURL:[NSURL URLWithString:picName]];
-    //视频图片
-    self.videoImageHCon.constant = self.videlImageView.size.width*model.video.height/model.video.width;
+    NSString *picName = [model.gif.images firstObject];
     
     
-    //播放的次数
+    self.bigImageView.contentMode = UIViewContentModeTop;
+    self.bigImageView.layer.masksToBounds = YES;
+    [self.bigImageView sd_setImageWithURL:[NSURL URLWithString:picName]];
     
-    self.playNumLabel.text = [NSString stringWithFormat:@"%ld播放",model.video.playcount];
     
-    //视频时长
-    NSMutableString *timeStr = [NSMutableString string];
-    NSInteger duration = model.video.duration;
-    //小时
-    if (duration > 3600){
-        [timeStr appendFormat:@"%02ld:",duration/3600 ];
-        duration = duration/3600;
+    
+    CGFloat h =self.bigImageView.frame.size.width * model.gif.height / model.gif.width;
+    if (h>300){
+        h = 300;
     }
-    //分钟
-    if (duration > 60){
-        [timeStr appendFormat:@"%02ld:",duration/60];
-        duration = duration/60;
-    }
-    [timeStr appendFormat:@"%02ld",duration];
-    self.playTimeLabel.text = timeStr;
+    self.bigImageViewHCon.constant = h;
     
     //热评
     
@@ -155,11 +143,14 @@
 
     _model.cellHeight = @((CGFloat)CGRectGetMaxY(self.commentButton.frame)+10);
     
+    
 }
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
     
     
 }

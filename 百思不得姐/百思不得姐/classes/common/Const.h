@@ -27,6 +27,8 @@
 //获取列表
 //http://s.budejie.com/public/list-appbar/bs0315-iphone-4.3/
 //精华
+//精华接口后面共同的部分
+#define kEssenceSuffixUrl (@"bs0315-iphone-4.3/%ld-20.json")
 
 //1.1 推荐
 //http://s.budejie.com/topic/list/jingxuan/1/bs0315-iphone-4.3/0-20.json
